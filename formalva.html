@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="main.css" rel="stylesheet" />
+  
+ 
+</head>
+<body>
+    <div class="container" >
+    <form id="form" action="https://formspree.io/f/xjvzonwa" method="POST">
+        <h2>Pago de servicio en l&iacute;nea</h2>
+        <table>
+               <tr>
+      <div class="form">
+        <form action="#" method="post">
+          <fieldset>
+            <div class="form-group">
+              <label for="servicio_a_pagar">Servicio a pagar</label>
+              <select name="servicio_a_pagar" id="servicio_a_pagar">
+                <option value="Internet">Internet</option>
+                <option value="CableTV">Cable TV</option>
+                <option value="Agua">Agua</option>
+                <option value="Agua">Luz</option>
+              </select>
+            </div>
+       
+    </tr>
+        
+        <tr class="form-group">
+            <td>Codigo del Cliente: </td>
+            <td><input type="text" name="cliente" placeholder="0000"  title="Sólo Podés Ingresar
+             Letras Mayúsculas, Minúsculas con Acento y Espacios"></td></tr>
+             <tr class="form-group">
+                <td>Correo electr&oacute;nico </td>
+                <td> <input type="email" name="email" placeholder="Ingrese su Correo Electronico"></td></tr>
+                <tr class="form-group"> 
+                    <td>N&uacute;mero de factura </td>
+                  
+                <td><input type="number" name="factura" placeholder="Ingrese su Numero de factura" pattern="[0-9]+" title="Sólo Podés Ingresar Números"></td></tr>
+                <tr class="form-group"> 
+                    <td>Moneda y monto a pagar
+                        <select name="moneda" id="moneda">
+                            <option value="COR">C$</option>
+                            <option value="USD">US $</option>
+                          </select>
+                    </td>
+                   
+                    <td><input name="dinero"  placeholder="##,###.##"></td></tr>
+                    <tr class="form-group">
+                        <td>Tipo tarjeta de cr&eacute;dito 
+                            <select name="tipo_tarjeta" id="tipo_tarjeta">
+                                <option value="VISA">VISA</option>
+                                <option value="MASTERCARD">MasterCard</option>
+                                <option value="AMERICANEXPRESS">American Express</option>
+                              </select>
+                        </td>
+                       
+                        <tr class="form-group">
+                            <td>N&uacute;mero de tarjeta de cr&eacute;dito </td>
+                            <td> <input  name="tarjeta" placeholder="0000-0000-0000-0000"></td></tr>
+
+                            <tr class="form-group">
+                                <td>Fecha de expiraci&oacute;n</td>
+                                <td> <input  name="fecha"placeholder="mm-aa" size="5"></td></tr>
+    
+    
+
+
+
+                    <tr class="form-group">
+                        <td> <button type="submit" id="boton">Pagar</button></td></tr> 
+    </table>
+    
+    </form>
+</div>
+  <script src="validarForm.js"></script>
+</body>
+</html>
